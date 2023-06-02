@@ -15,7 +15,7 @@ export default class ThreeCamera {
       1,
       2000
     )
-    this.camera.position.set(400, 800, 400);
+    this.camera.position.set(0, 0, 0);
     this.updateSize(renderer)
   }
 

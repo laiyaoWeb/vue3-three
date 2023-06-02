@@ -12,19 +12,19 @@ export default class ThreeGround {
   
   addGround() {
     const floor: THREE.Mesh = new THREE.Mesh(
-      new THREE.BoxGeometry(500, 500, 10),
-      new THREE.MeshPhongMaterial({
+      new THREE.BoxGeometry(500, 500, 0.1),
+      new THREE.MeshBasicMaterial({
         color: 0xffffff,
-        depthWrite: false,
+        depthWrite: true,
       })
     );
     floor.rotation.x = -Math.PI / 2;
-    floor.position.y = -10;
+    floor.position.y = -2;
     floor.receiveShadow = true;
     this.scene.add(floor);
 
     // 网格
-    const grid = new THREE.GridHelper(500, 20, 0xffffff, 0xffffff);
+    const grid = new THREE.GridHelper(500, 20, 0x000000, 0x000000);
     // @ts-ignore
     grid.material.opacity = 0.2;
     // @ts-ignore
@@ -32,6 +32,6 @@ export default class ThreeGround {
     grid.position.y = -1;
     this.scene.add(grid);
     
-    console.log('grid: ' + grid)
+    // console.log('grid: ' + grid)
   }
 }

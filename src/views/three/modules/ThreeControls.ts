@@ -20,8 +20,8 @@ export default class ThreeControls {
 
   addControls() {
     this.controls.target.set(0, 0, 0);
-    this.controls.minDistance = 300;
-    this.controls.maxDistance = 1800;
+    this.controls.minDistance = 10;
+    this.controls.maxDistance = 10000;
     this.controls.update();
   }
 

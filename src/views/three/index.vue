@@ -1,6 +1,6 @@
 <template>
   <div class="view-container" ref="viewContainer"></div>
-  <controPanel v-if="isLoad" />
+  <controlPanel v-if="isLoad" />
   <formView />
 </template>
 
@@ -9,7 +9,7 @@ import { ref, shallowRef, provide, onMounted, onUnmounted, reactive } from 'vue'
 import ViewEntry from './modules/ViewEntry'
 import * as THREE from 'three';
 import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader';
-import controPanel from './components/contro-panel.vue'
+import controlPanel from './components/control-panel.vue'
 import formView from './components/form.vue'
 
 const viewEntryRef: any = shallowRef(null);

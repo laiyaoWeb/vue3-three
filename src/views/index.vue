@@ -1,5 +1,6 @@
 <template>
   <div>
+    <a href="#/three" class="btn" @click="clickHandler">three3D page</a>
     <a href="#" class="btn" @click="clickHandler">发送mqtt</a>
   </div>
 </template>

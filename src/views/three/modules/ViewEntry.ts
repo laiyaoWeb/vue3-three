@@ -45,8 +45,8 @@ export default class ViewEntry {
     this.renderer.shadowMap.enabled = true;
     this.dom.appendChild(this.renderer.domElement);
 
-    this.camera = new THREE.PerspectiveCamera( 45, dom.offsetWidth / dom.offsetHeight, 1, 2000 );
-		this.camera.position.set( 100, 200, 300 );
+    this.camera = new THREE.PerspectiveCamera( 60, dom.offsetWidth / dom.offsetHeight, 0.1, 1000 );
+		this.camera.position.set( 200, 200, 100 );
 
      // 光线
     this.threeLight = new ThreeLight(this.scene)
